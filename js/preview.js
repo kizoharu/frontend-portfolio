@@ -12,15 +12,6 @@ let tail = {};
 
     webgl.renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
     
-    // console.log(webgl.getSize());
-
-    // let clientWidth = webgl.container?.clientWidth || 0;
-    // let clientHeight  = webgl.container?.clientHeight || 0;
-    // console.log('webgl',webgl);
-    // console.log('clientWidth', clientWidth);
-    // console.log('clientHeight', clientHeight);
-
-    // webgl.renderer.setSize(clientWidth, clientHeight);
     webgl.renderer.setSize(webgl.container.clientWidth, webgl.container.clientHeight);
     webgl.renderer.setPixelRatio(window.devicePixelRatio);
     webgl.container.appendChild(webgl.renderer.domElement);
@@ -30,12 +21,8 @@ let tail = {};
     webgl.phase = "wall";
 
     webgl.loader = new THREE.TextureLoader();
-    // webgl.texture = webgl.loader.load('https://i.imgur.com/ZrnWXzF.png', setup); 
-    // webgl.texture = webgl.loader.load('../img/home/ZrnWXzF.png', setup); 
-    // webgl.texture = webgl.loader.load('../img/home/crack-big.png, setup); 
-    // webgl.texture = webgl.loader.load('../img/home/crack-small.png', setup); 
-    // webgl.texture = webgl.loader.load('../img/home/white-crack-3.png', setup); 
-    webgl.texture = webgl.loader.load('../img/home/kizo.png', setup); 
+    // webgl.texture = webgl.loader.load('../img/home/kizo.png', setup); 
+    webgl.texture = webgl.loader.load('..frontend-portfolio/img/home/kizo.png', setup); 
 })();
 
 
