@@ -22,8 +22,8 @@ let tail = {};
 
     webgl.loader = new THREE.TextureLoader();
     // webgl.texture = webgl.loader.load('../img/home/kizo.png', setup); 
-    webgl.texture = webgl.loader.load('/img/home/kizo.png', setup); 
-    // webgl.texture = webgl.loader.load('/frontend-portfolio/img/home/kizo.png, setup); 
+    // webgl.texture = webgl.loader.load('/img/home/kizo.png', setup); 
+    webgl.texture = webgl.loader.load('/frontend-portfolio/img/home/kizo.png', setup); 
 })();
 
 
