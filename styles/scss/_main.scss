@@ -1,0 +1,227 @@
+
+/*-----------------------------main-----------------------------*/
+
+// variables
+$fz:100px;
+$color_1:#000;
+$color_2:#fff;
+
+
+body{
+    font-family: Rubik;
+    font-size: 12px;
+    background-color: #333844;
+    // background-image: url("https://assets.codepen.io/13471/sparkles.gif")
+}
+
+
+[class*=__container]  {
+    max-width: 2200px;
+    margin: 0px auto;
+    padding: 0 15px;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+.wrapper {
+    // overflow: hidden;
+    display: flex;
+    flex-direction: column; // for separation header, page and footer
+    min-height: 100%;
+    text-align: center;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+
+/* PC */
+@media (max-width: 1899px) {
+    [class*=__container]  {
+        max-width: 1600px;
+    }
+}
+
+@media (max-width: 1087px) {
+    [class*=__container]  {
+        max-width: 970px;
+    }
+}
+
+/* TABLET */
+@media (max-width: 991.98px) {
+    [class*=__container]  {
+        max-width: 750px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 767.98px) {
+    [class*=__container]  {
+        max-width: none;
+        // max-width: 732px;
+    }
+}
+
+/* MOBILE SMALL*/
+@media (max-width: 574.98px) {
+
+}
+
+/* ------------------------------------------------------------------------------ */
+
+h1 {
+    font-size: 5vw;
+    margin: 0;
+    color: #03dac6;
+    margin-bottom: 60px;
+    transition: all 0.3s ease;
+    &:hover {
+        transform: translate3d(0, -10px, 22px);
+        color: #ff0266;
+    }
+}
+
+
+/* ------------------------------------------------------------------------------ */
+
+.header {
+    overflow: hidden;
+    border-color: transparent;
+    background-color: #1e1f26;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 999;
+    
+
+    .navigation__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 36px;
+    }
+    
+    nav {
+        ul {
+            display: flex;
+            align-items: center;
+            li {
+                margin-left: 20px;
+                a {
+                    text-transform: uppercase;
+                    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    color: #fff;
+                    &:hover,
+                    &:focus
+                    {
+                        outline: 0;
+                        color: #03dac6;
+                    }
+                    
+                }
+            }
+        }
+    }
+    .logo {
+        a {
+            font-size: 24px;
+            font-weight: 600;
+            font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+            color: #03dac6;
+            cursor: pointer;
+            &:hover,
+            &:focus,
+            &:active
+            {
+                color: #ff0266;
+            }
+        }
+    }
+    
+
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+}
+
+
+.pdf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+        z-index: 1;
+    }
+    &:hover {
+
+        .pdf__anim {
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+                -o-transition: all 0.3s;
+                    transition: all 0.3s;
+    
+            height: 42px;
+            width: 42px;
+        }
+    }
+}
+
+.pdf__anim {
+    -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+                transition: all 0.3s;
+    
+    border-radius: 100%;
+    height: 0;
+    width: 0;
+    position: absolute;
+    z-index: 0;
+    background-color: #03dac6;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------ */
+
+.main {
+    margin-bottom: 100px;
+    .home__container {
+
+    }
+    .skills__container {
+        text-align: center;
+        padding: 20px 15px;
+        // background-color: #8ddbd4;
+        // padding: 200px;
+        
+    }
+    .workline__container {
+        text-align: center;
+        padding: 40px 15px;
+    }
+    .portfolio__container {
+        // background-color: #db7ecc;
+        text-align: center;
+        padding: 20px 15px;
+        // padding: 600px;
+    }
+    .contact__container {
+        // background-color: #90db7a;
+        text-align: center;
+        padding: 20px 15px;
+        // margin: 100px;
+    }
+}
+
+
+/*==============================main==============================*/

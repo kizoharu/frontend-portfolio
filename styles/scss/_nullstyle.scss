@@ -1,0 +1,36 @@
+/*-----------------------------nullstyle-----------------------------*/
+// Внутренние и внешние отступы, а так же границы 
+*{padding: 0;margin: 0;border: 0;}
+
+// Меняет подсчёт ширины блока, для более удобной вёрстки 
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+
+// Убираем линии обводки у некоторых браузеров 
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+// Делаем некоторые html5 теги блочными 
+nav,footer,header,aside{display: block;}
+
+// Уравниваем поведение шрифтов и элементов для разных браузеров 
+// В т.ч. запрещают в некоторых случаях самовольное увеличение шрифтов 
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+
+// Наследуем семейство шрифтов для этих тегов
+input,button,textarea{font-family:inherit;}
+
+// Убираем специфические особенности для разных браузеров.
+// (Например крестик в ie для input, лишние отступы в firefox для button и т.д.)
+// Так же чистим стили маркированных списков. 
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+// Обнуляем все заголовки
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+/*==============================nullstyle==============================*/
