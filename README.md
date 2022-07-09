@@ -1,2 +1,2 @@
 # frontend-portfolio html-scss-js
-[DEMO](https://kizoharu.github.io/frontend-portfolio/#contact)
+[DEMO](https://kizoharu.github.io/frontend-portfolio/)
