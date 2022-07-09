@@ -423,6 +423,7 @@ time {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
+    margin: 0px 30px;
   }
   .timeline ul li {
     margin-bottom: 20px;
@@ -713,15 +714,15 @@ time {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-column-gap: 4em;
+          column-gap: 4em;
+  row-gap: 3em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.card {
-  margin-bottom: 1em;
 }
 
 .card h1 {
